@@ -10,9 +10,11 @@ public class Project {
     private Contract contract;
     private ArrayList<Task> tasksList;
     private static int NEXT_ID = 0;
-    public Project(String name, String description, Date start, Date end, int budget){
+    private Customer customer;
+    public Project(String name, String description, Date start, Date end, int budget, Customer customer){
         this.name = name;
         this.description = description;
+        this.customer = customer;
         this.contract = new Contract(Date start, Date end, int budget);
         this.id = NEXT_ID++;
         this.tasksList = new ArrayList<Task>();
@@ -55,5 +57,13 @@ public class Project {
 
     public void setTasksList(ArrayList<Task> tasksList) {
         this.tasksList = tasksList;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }
