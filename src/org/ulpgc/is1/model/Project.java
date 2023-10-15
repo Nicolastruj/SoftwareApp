@@ -15,12 +15,12 @@ public class Project {
         this.name = name;
         this.description = description;
         this.customer = customer;
-        this.contract = new Contract(Date start, Date end, int budget);
+        this.contract = new Contract(start, end, budget);
         this.id = NEXT_ID++;
         this.tasksList = new ArrayList<Task>();
     }
     public void addTask(String name, String description, Date start, Date end, TaskType type){
-        Task task = new Task(String name, String description, Date start, Date end, TaskType type);
+        Task task = new Task(name, description, start, end, type);
         this.tasksList.add(task);
     }
 
@@ -49,7 +49,7 @@ public class Project {
     }
 
     public void setContract(Date start, Date end, int budget) {
-        this.contract = new Contract(Date start, Date end, int budget);
+        this.contract = new Contract(start, end, budget);
     }
     public ArrayList<Task> getTasksList(){
         return tasksList;
