@@ -7,14 +7,14 @@ public class Customer {
     private String surname;
     private Phone phone;
     private ArrayList<Project> projectsList;
-    public Customer(String name, String surname, Phone phone){
+    public Customer(String name, String surname, String phone){
         this.name = name;
         this.surname = surname;
         this.phone = phone;
         this.projectsList = new ArrayList<Customer>();
     }
-    public void addProject(Project){
-        this.projectsList.add(Project);
+    public void addProject(Project project){
+        this.projectsList.add(project);
     }
     public String getName() {
         return name;

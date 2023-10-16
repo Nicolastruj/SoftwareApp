@@ -1,8 +1,11 @@
 package org.ulpgc.is1.control;
 
+import org.ulpgc.is1.model.Customer;
+
 public class Main {
 
     // i Init. Crear dos clientes. (*) En el caso que el cliente tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
+    Customer customer1 = new Customer("Luis", "Perera", "978654321");
 
 
     // ii. Init. Crear dos empleados.
