@@ -17,7 +17,6 @@ public class Main {
 
     // iii. Init. Crear un proyecto vinculado al primer cliente. El primer empleado será desarrollador en el proyecto. El segundo será el manager.
 
-
     // iv. Init. Crear dos tareas vinculadas al proyecto anterior.
 
 
