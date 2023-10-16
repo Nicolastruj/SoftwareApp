@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58b9fce8-cef5-4ea7-8d30-2c58288b9c83" name="Changes" comment="8th commit, added Employee">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectManager.java" afterDir="false" />
+    <list default="true" id="58b9fce8-cef5-4ea7-8d30-2c58288b9c83" name="Changes" comment="9th commit, added ProjectManager">
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697457190992</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="9th commit, added ProjectManager">
+      <option name="closed" value="true" />
+      <created>1697473200965</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697473200965</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +155,7 @@
     <MESSAGE value="fith commit, Phone and effort ended" />
     <MESSAGE value="sith commit, added customer atribute in project and project list in customer" />
     <MESSAGE value="8th commit, added Employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="8th commit, added Employee" />
+    <MESSAGE value="9th commit, added ProjectManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="9th commit, added ProjectManager" />
   </component>
 </project>
