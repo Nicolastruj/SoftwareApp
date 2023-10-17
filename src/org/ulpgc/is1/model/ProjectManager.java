@@ -8,13 +8,13 @@ public class ProjectManager {
     private ArrayList<Employee> employeeList;
     private ArrayList<Customer> customerList;
 
-    public ProjectManager(ArrayList<Employee> employeeList, ArrayList<Customer> customerList) {
-        this.employeeList = employeeList;
-        this.customerList = customerList;
+    public ProjectManager() {
+        this.employeeList = new ArrayList<Employee>();
+        this.customerList = new ArrayList<Customer>();
     }
 
     public ArrayList<Employee> getEmployeeList() {
-        return employeeList;
+        return this. employeeList;
     }
 
     public void setEmployeeList(ArrayList<Employee> employeeList) {
@@ -22,29 +22,36 @@ public class ProjectManager {
     }
 
     public ArrayList<Customer> getCustomerList() {
-        return customerList;
+        return this.customerList;
     }
 
     public void setCustomerList(ArrayList<Customer> customerList) {
         this.customerList = customerList;
     }
 
-    public void addCustomer(Customer customer){
-        customerList.add(customer);
-    }
-
-    public void addEmployee(Employee employee){
-        employeeList.add(employee);
-    }
 
     public Customer getCustomer(int index){
-        return customerList.get(index);
+        return this.customerList.get(index);
     }
 
     public Employee getEmployee(int index){
-        return employeeList.get(index);
+        return this.employeeList.get(index);
     }
 
+    public void addCustomer(String name, String surname, String phone){
+        Customer customer = new Customer(name, surname, phone);
+        customerList.add(customer);
+    }
+    public void removeCustomer(int index){
+        this.getCustomerList().remove(index);
+    }
+    public void addEmployee(String name, String email){
+        Employee employee =new Employee(name, email);
+        employeeList.add(employee);
+    }
+    public void removeEmployee(int index){
+        this.getEmployeeList().remove(index);
+    }
     public Project project(){
         return project();
     }

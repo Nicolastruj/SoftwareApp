@@ -11,17 +11,31 @@ public class Project {
     private ArrayList<Task> tasksList;
     private static int NEXT_ID = 0;
     private Customer customer;
-    public Project(String name, String description, Date start, Date end, int budget, Customer customer){
+    private ArrayList<Employee> developers;
+    private Employee manager;
+
+    public Project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
         this.name = name;
         this.description = description;
         this.customer = customer;
         this.contract = new Contract(start, end, budget);
         this.id = NEXT_ID++;
         this.tasksList = new ArrayList<Task>();
+        this.developers = new ArrayList<Employee>();
+        this.manager = manager;
     }
     public void addTask(String name, String description, Date start, Date end, TaskType type){
         Task task = new Task(name, description, start, end, type);
         this.tasksList.add(task);
+    }
+    public void removeTask(int index){
+        this.getTasksList().remove(index);
+    }
+    public void addDevelopers(Employee developer){
+        this.developers.add(developer);
+    }
+    public void removeDeveloper(int index){
+        this.getDevelopers().remove(index);
     }
 
     public int getId() {
@@ -65,5 +79,21 @@ public class Project {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public Employee getManager() {
+        return manager;
+    }
+
+    public void setManager(Employee manager) {
+        this.manager = manager;
+    }
+
+    public ArrayList<Employee> getDevelopers() {
+        return developers;
+    }
+
+    public void setDevelopers(ArrayList<Employee> developers) {
+        this.developers = developers;
     }
 }

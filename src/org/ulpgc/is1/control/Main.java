@@ -2,8 +2,6 @@ package org.ulpgc.is1.control;
 
 import org.ulpgc.is1.model.Customer;
 import org.ulpgc.is1.model.Employee;
-import org.ulpgc.is1.model.Project;
-import org.ulpgc.is1.model.Task;
 
 public class Main {
 
@@ -12,8 +10,8 @@ public class Main {
     Customer customer2 = new Customer("Nicolas", "Trujillo", "123456798");
 
     // ii. Init. Crear dos empleados.
-    Employee employee1 = new Employee("Jorge", "jorge@gmail.com");
-    Employee employee2 = new Employee("Ines", "ines@gmail.com");
+    Employee employee1 = new Employee("Jorge", "jorge@gmail.com", tasksList, projectListDeveloper, projectListManager);
+    Employee employee2 = new Employee("Ines", "ines@gmail.com", tasksList, projectListDeveloper, projectListManager);
 
     // iii. Init. Crear un proyecto vinculado al primer cliente. El primer empleado será desarrollador en el proyecto. El segundo será el manager.
 
