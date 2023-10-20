@@ -6,7 +6,7 @@ public class Phone {
         this.number = number;
     }
     public boolean isValid(){
-        if (number != null && number.matches("\\d{10}")) {
+        if (number != null && number.matches("\\d{9}")) {
             return true;
         } else {
             return false;
