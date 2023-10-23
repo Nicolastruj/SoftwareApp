@@ -1,7 +1,9 @@
 package org.ulpgc.is1.control;
 
-import org.ulpgc.is1.model.Customer;
-import org.ulpgc.is1.model.Employee;
+import org.ulpgc.is1.model.*;
+
+import java.util.Date;
+import java.util.List;
 
 public class Main {
 
@@ -10,30 +12,48 @@ public class Main {
     Customer customer2 = new Customer("Nicolas", "Trujillo", "123456798");
 
     // ii. Init. Crear dos empleados.
-    Employee employee1 = new Employee("Jorge", "jorge@gmail.com", tasksList, projectListDeveloper, projectListManager);
-    Employee employee2 = new Employee("Ines", "ines@gmail.com", tasksList, projectListDeveloper, projectListManager);
+    Employee employee1 = new Employee("Jorge", "jorge@gmail.com");
+    Employee employee2 = new Employee("Ines", "ines@gmail.com");
 
     // iii. Init. Crear un proyecto vinculado al primer cliente. El primer empleado será desarrollador en el proyecto. El segundo será el manager.
+    Date star = new Date(2023, 10, 23);
+    Date end = new Date(2024, 10, 23);
+    Project project = new Project("Proyecto1", "descripcion", star, end, 200, customer1, employee1);
+    project.addDevelopers(employee2);
 
     // iv. Init. Crear dos tareas vinculadas al proyecto anterior.
-
+    project.addTask("tarea1", "descripcion1", star, end, TaskType.Analysis);
+    project.addTask("tarea2", "descripcion2", star, end, TaskType.Design);
 
     // v. Imprimir por pantalla los datos del primer cliente.
-
+    System.out.println("Datos del primer cliente:");
+    System.out.println("Nombre: " + customer1.getName());
+    System.out.println("Apellido: " + customer1.getSurname());
+    System.out.println("Teléfono: " + customer1.getPhone().getNumber());
 
     // vi. Imprimir por pantalla los datos del segundo empleado.
-
+    System.out.println("\nDatos del segundo empleado:");
+    System.out.println("Nombre: " + employee2.getName());
+    System.out.println("Email: " + employee2.getEmail());
 
     // vii. Imprimir por pantalla los datos del proyecto del primer cliente.
-
+    System.out.println("\nDatos del proyecto del primer cliente:");
+    System.out.println("Nombre del proyecto: " + project.getName());
+    System.out.println("Descripción del proyecto: " + project.getDescription());
 
     // viii. Imprimir por pantalla los datos de las tareas del proyecto.
-
+    System.out.println("\nDatos de las tareas del proyecto:");
+    for (Task task : project.getTasksList()) {
+        System.out.println("Tarea: " + task.getName());
+        System.out.println("Descripción: " + task.getDescription());
+        System.out.println("Tipo de tarea: " + task.getType());
+        System.out.println();
+    }
 
     // ix. Borrar el segundo cliente.
-
+    customer2 = null;
 
     // x. Imprimir por pantalla el número de clientes
-
+    System.out.println("\nNúmero de clientes: " + Customer.getNumberOfCustomers());
 
 }

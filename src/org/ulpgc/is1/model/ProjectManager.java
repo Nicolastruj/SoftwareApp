@@ -13,14 +13,14 @@ public class ProjectManager {
     public ProjectManager(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager) {
         this.employeeList = new ArrayList<Employee>();
         this.customerList = new ArrayList<Customer>();
-        this.project = project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager);
+        this.project = project(name, description, start, end, budget, customer, manager);
     }
     public Project project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
-        return new Project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager);
+        return new Project(name, description, start, end, budget, customer, manager);
     }
 
     public ArrayList<Employee> getEmployeeList() {
-        return this. employeeList;
+        return this.employeeList;
     }
 
     public void setEmployeeList(ArrayList<Employee> employeeList) {
@@ -44,7 +44,7 @@ public class ProjectManager {
         return this.employeeList.get(index);
     }
 
-    public void addCustomer(String name, String surname, String phone){
+    public void addCustomer(String name, String surname, Phone phone){
         Customer customer = new Customer(name, surname, phone);
         customerList.add(customer);
     }
