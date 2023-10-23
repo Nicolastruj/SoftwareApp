@@ -8,15 +8,12 @@ public class ProjectManager {
 
     private ArrayList<Employee> employeeList;
     private ArrayList<Customer> customerList;
-    private Project project;
-
     public ProjectManager(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager) {
         this.employeeList = new ArrayList<Employee>();
         this.customerList = new ArrayList<Customer>();
-        this.project = project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager);
     }
-    public Project project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
-        return new Project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager);
+    public void project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
+        customer.addProject(name, description, start, end, budget, customer, manager);
     }
 
     public ArrayList<Employee> getEmployeeList() {
@@ -44,7 +41,7 @@ public class ProjectManager {
         return this.employeeList.get(index);
     }
 
-    public void addCustomer(String name, String surname, String phone){
+    public void addCustomer(String name, String surname, Phone phone){
         Customer customer = new Customer(name, surname, phone);
         customerList.add(customer);
     }

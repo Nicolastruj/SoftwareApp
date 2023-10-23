@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58b9fce8-cef5-4ea7-8d30-2c58288b9c83" name="Changes" comment="11th commit, changes in ProjectManager, Employee and Project">
+    <list default="true" id="58b9fce8-cef5-4ea7-8d30-2c58288b9c83" name="Changes" comment="12th commit changed class Effort and projec method in ProjectManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Task.java" afterDir="false" />
     </list>
@@ -28,6 +29,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Nicolastruj"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="551dce70-910a-44f3-aabb-eee7c54f60f9" />
+        <option name="url" value="https://github.com/Nicolastruj/SoftwareApp.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -139,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697474005633</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="12th commit changed class Effort and projec method in ProjectManager">
+      <option name="closed" value="true" />
+      <created>1697792021357</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697792021357</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +186,7 @@
     <MESSAGE value="8th commit, added Employee" />
     <MESSAGE value="9th commit, added ProjectManager" />
     <MESSAGE value="10th commit, added Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="10th commit, added Main" />
+    <MESSAGE value="12th commit changed class Effort and projec method in ProjectManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="12th commit changed class Effort and projec method in ProjectManager" />
   </component>
 </project>

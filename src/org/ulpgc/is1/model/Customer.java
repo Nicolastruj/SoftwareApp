@@ -1,19 +1,21 @@
 package org.ulpgc.is1.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Customer {
     private String name;
     private String surname;
     private Phone phone;
     private ArrayList<Project> projectsList;
-    public Customer(String name, String surname, String phone){
+    public Customer(String name, String surname, Phone phone){
         this.name = name;
         this.surname = surname;
         this.phone = phone;
-        this.projectsList = new ArrayList<Customer>();
+        this.projectsList = new ArrayList<Project>();
     }
-    public void addProject(Project project){
+    public void addProject(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
+        Project project = new Project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager)
         this.projectsList.add(project);
     }
     public String getName() {

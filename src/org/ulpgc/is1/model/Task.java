@@ -19,7 +19,7 @@ public class Task {
         this.effortsList = new ArrayList<Effort>();
     }
     public void addEffort(int amount, Employee employee, Task task){
-        Effort effort = new Effort(amount, employee, task);
+        Effort effort = new Effort(amount, task, employee);
         this.effortsList.add(effort);
     }
 
