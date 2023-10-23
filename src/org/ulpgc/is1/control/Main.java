@@ -1,9 +1,15 @@
 package org.ulpgc.is1.control;
 
-import org.ulpgc.is1.model.*;
+
+
+import org.ulpgc.is1.model.Customer;
+import org.ulpgc.is1.model.Employee;
+import org.ulpgc.is1.model.Phone;
+import org.ulpgc.is1.model.ProjectManager;
 
 import java.util.Date;
-import java.util.List;
+
+;
 
 public class Main {
 
@@ -16,10 +22,10 @@ public class Main {
     Employee employee2 = new Employee("Ines", "ines@gmail.com");
 
     // iii. Init. Crear un proyecto vinculado al primer cliente. El primer empleado será desarrollador en el proyecto. El segundo será el manager.
-    Date star = new Date(2023, 10, 23);
+    Date start = new Date(2023, 10, 23);
     Date end = new Date(2024, 10, 23);
-    Project project = new Project("Proyecto1", "descripcion", star, end, 200, customer1, employee1);
-    project.addDevelopers(employee2);
+    ProjectManager projectManager = new ProjectManager("Proyecto 1", "Proyecto de prueba", start, end, 1000, customer1, employee2);
+    projectManager.
 
     // iv. Init. Crear dos tareas vinculadas al proyecto anterior.
     project.addTask("tarea1", "descripcion1", star, end, TaskType.Analysis);

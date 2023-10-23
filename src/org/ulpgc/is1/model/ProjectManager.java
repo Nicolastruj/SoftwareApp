@@ -8,12 +8,10 @@ public class ProjectManager {
 
     private ArrayList<Employee> employeeList;
     private ArrayList<Customer> customerList;
-    private Project project;
 
     public ProjectManager(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager) {
         this.employeeList = new ArrayList<Employee>();
         this.customerList = new ArrayList<Customer>();
-        this.project = project(name, description, start, end, budget, customer, manager);
     }
     public Project project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
         return new Project(name, description, start, end, budget, customer, manager);

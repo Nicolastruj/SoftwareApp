@@ -16,7 +16,7 @@ public class Task {
         this.start = start;
         this.end = end;
         this.type = type;
-        this.effortsList = new ArrayList<Effort>();
+        this.effortsList = new ArrayList<Effort>();//TODO a lo mejor hay que cambiar la lista effortList por un solo elemento effort
     }
     public void addEffort(int amount, Employee employee, Task task){
         Effort effort = new Effort(amount, task, employee);

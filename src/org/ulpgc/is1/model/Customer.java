@@ -15,7 +15,7 @@ public class Customer {
         this.projectsList = new ArrayList<Project>();
     }
     public void addProject(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
-        Project project = new Project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager)
+        Project project = new Project( name, description, start, end, budget, customer, manager);
         this.projectsList.add(project);
     }
     public String getName() {
