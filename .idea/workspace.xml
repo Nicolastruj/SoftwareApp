@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58b9fce8-cef5-4ea7-8d30-2c58288b9c83" name="Changes" comment="11th commit, changes in ProjectManager, Employee and Project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/TaskType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/TaskType.java" afterDir="false" />
-    </list>
+    <list default="true" id="58b9fce8-cef5-4ea7-8d30-2c58288b9c83" name="Changes" comment="13th commit, finish main and change things" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697474005633</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="13th commit, finish main and change things">
+      <option name="closed" value="true" />
+      <created>1698076277119</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698076277119</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +167,7 @@
     <MESSAGE value="8th commit, added Employee" />
     <MESSAGE value="9th commit, added ProjectManager" />
     <MESSAGE value="10th commit, added Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="10th commit, added Main" />
+    <MESSAGE value="13th commit, finish main and change things" />
+    <option name="LAST_COMMIT_MESSAGE" value="13th commit, finish main and change things" />
   </component>
 </project>

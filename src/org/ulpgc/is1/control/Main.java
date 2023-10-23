@@ -8,8 +8,8 @@ import java.util.List;
 public class Main {
 
     // i Init. Crear dos clientes. (*) En el caso que el cliente tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
-    Customer customer1 = new Customer("Luis", "Perera", "978654321");
-    Customer customer2 = new Customer("Nicolas", "Trujillo", "123456798");
+    Customer customer1 = new Customer("Luis", "Perera", new Phone("978654321"));
+    Customer customer2 = new Customer("Nicolas", "Trujillo", new Phone("123456789"));
 
     // ii. Init. Crear dos empleados.
     Employee employee1 = new Employee("Jorge", "jorge@gmail.com");
