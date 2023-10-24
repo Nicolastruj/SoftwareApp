@@ -8,12 +8,14 @@ public class ProjectManager {
 
     private ArrayList<Employee> employeeList;
     private ArrayList<Customer> customerList;
+    private Project project;
 
-    public ProjectManager(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager) {
+    public ProjectManager() {
         this.employeeList = new ArrayList<Employee>();
         this.customerList = new ArrayList<Customer>();
     }
     public Project project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
+        this.project = new Project(name, description, start, end, budget, customer, manager);
         return new Project(name, description, start, end, budget, customer, manager);
     }
 
@@ -56,8 +58,12 @@ public class ProjectManager {
     public void removeEmployee(int index){
         this.getEmployeeList().remove(index);
     }
-    public Project project(){
-        return project();
+
+    public Project getProject() {
+        return project;
     }
 
+    public void setProject(Project project) {
+        this.project = project;
+    }
 }

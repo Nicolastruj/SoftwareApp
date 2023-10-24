@@ -49,4 +49,12 @@ public class Customer {
     public void setProjectsList(ArrayList<Project> projectsList) {
         this.projectsList = projectsList;
     }
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", phone=" + phone +
+                '}';
+    }
 }

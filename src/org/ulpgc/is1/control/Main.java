@@ -1,65 +1,41 @@
 package org.ulpgc.is1.control;
 
 
-
-import org.ulpgc.is1.model.Customer;
-import org.ulpgc.is1.model.Employee;
-import org.ulpgc.is1.model.Phone;
-import org.ulpgc.is1.model.ProjectManager;
+import org.ulpgc.is1.model.*;
 
 import java.util.Date;
 
-;
-
 public class Main {
 
-    // i Init. Crear dos clientes. (*) En el caso que el cliente tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
-    Customer customer1 = new Customer("Luis", "Perera", new Phone("978654321"));
-    Customer customer2 = new Customer("Nicolas", "Trujillo", new Phone("123456789"));
+    private static void init(ProjectManager projectManager){
+        //Primer paso
+        projectManager.addCustomer("Nicolas", "Trujillo", new Phone("123456789"));
+        projectManager.addCustomer("Luis", "Perera", new Phone("987654321"));
 
-    // ii. Init. Crear dos empleados.
-    Employee employee1 = new Employee("Jorge", "jorge@gmail.com");
-    Employee employee2 = new Employee("Ines", "ines@gmail.com");
+        //Segundo paso
+        projectManager.addEmployee("Elisa", "elisa@gmail.com");
+        projectManager.addEmployee("Adolfo", "adolfo@gmail.com");
 
-    // iii. Init. Crear un proyecto vinculado al primer cliente. El primer empleado será desarrollador en el proyecto. El segundo será el manager.
-    Date start = new Date(2023, 10, 23);
-    Date end = new Date(2024, 10, 23);
-    ProjectManager projectManager = new ProjectManager("Proyecto 1", "Proyecto de prueba", start, end, 1000, customer1, employee2);
-    projectManager.
+        //Tercer paso
+        Employee employee = projectManager.getEmployeeList().get(1);
+        Customer
+        projectManager.project("Proyecto1", "Proyecto de prueba", new Date(123, 1, 1), new Date(123, 30, 12), 1000, projectManager.getCustomerList().get(0), projectManager.getEmployeeList().get(1));
+        projectManager.getCustomerList().add(customer1);
+        projectManager.getProject().addDevelopers(projectManager.getEmployeeList().get(0));
+        projectManager.getEmployeeList()
 
-    // iv. Init. Crear dos tareas vinculadas al proyecto anterior.
-    project.addTask("tarea1", "descripcion1", star, end, TaskType.Analysis);
-    project.addTask("tarea2", "descripcion2", star, end, TaskType.Design);
-
-    // v. Imprimir por pantalla los datos del primer cliente.
-    System.out.println("Datos del primer cliente:");
-    System.out.println("Nombre: " + customer1.getName());
-    System.out.println("Apellido: " + customer1.getSurname());
-    System.out.println("Teléfono: " + customer1.getPhone().getNumber());
-
-    // vi. Imprimir por pantalla los datos del segundo empleado.
-    System.out.println("\nDatos del segundo empleado:");
-    System.out.println("Nombre: " + employee2.getName());
-    System.out.println("Email: " + employee2.getEmail());
-
-    // vii. Imprimir por pantalla los datos del proyecto del primer cliente.
-    System.out.println("\nDatos del proyecto del primer cliente:");
-    System.out.println("Nombre del proyecto: " + project.getName());
-    System.out.println("Descripción del proyecto: " + project.getDescription());
-
-    // viii. Imprimir por pantalla los datos de las tareas del proyecto.
-    System.out.println("\nDatos de las tareas del proyecto:");
-    for (Task task : project.getTasksList()) {
-        System.out.println("Tarea: " + task.getName());
-        System.out.println("Descripción: " + task.getDescription());
-        System.out.println("Tipo de tarea: " + task.getType());
-        System.out.println();
+        //Cuarto paso
+        Date task1DateOne = new Date(123, 1, 1);
+        Date task1DateTwo = new Date(123, 6, 1);
+        projectManager.getProject().addTask("Primera tarea","Primera tarea de prueba", task1DateOne, task1DateTwo, TaskType.Design);
+        projectManager.getProject().addTask("Segunda tarea","Segunda tarea de prueba", task1DateOne, task1DateTwo, TaskType.Test);
     }
 
-    // ix. Borrar el segundo cliente.
-    customer2 = null;
+    public static void main(String[] args){
+        ProjectManager projectManager = new ProjectManager();
+        init(projectManager);
+        System.out.println(projectManager.getProject().getCustomer().toString());
+        System.out.println(projectManager.getProject().getDevelopers().get(0).toString());
 
-    // x. Imprimir por pantalla el número de clientes
-    System.out.println("\nNúmero de clientes: " + Customer.getNumberOfCustomers());
-
+    }
 }

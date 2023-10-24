@@ -9,6 +9,7 @@ public class Phone {
         if (number != null && number.matches("\\d{9}")) {
             return true;
         } else {
+            this.number = "XXXX";
             return false;
         }
     }

@@ -67,5 +67,12 @@ public class Employee {
     public void removeProjectManager(int index){
         this.getProjectListManager().remove(index);
     }
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
 
