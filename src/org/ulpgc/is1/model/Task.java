@@ -62,4 +62,9 @@ public class Task {
     public void setType(TaskType type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "\tNombre: "+name+"\n\tDescripcion: "+description+"\n\tFecha de inicio: "+start+"\n\tFecha final: "+end+"\n\tTipo de tarea: "+type;
+    }
 }

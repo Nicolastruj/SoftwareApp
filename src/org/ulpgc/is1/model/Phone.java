@@ -9,7 +9,6 @@ public class Phone {
         if (number != null && number.matches("\\d{9}")) {
             return true;
         } else {
-            this.number = "XXXX";
             return false;
         }
     }
@@ -20,5 +19,10 @@ public class Phone {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return number;
     }
 }

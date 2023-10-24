@@ -7,6 +7,7 @@ public class Project {
     private final int id;
     private String name;
     private String description;
+    private ProjectType projectType;
     private Contract contract;
     private ArrayList<Task> tasksList;
     private static int NEXT_ID = 0;
@@ -14,7 +15,7 @@ public class Project {
     private ArrayList<Employee> developers;
     private Employee manager;
 
-    public Project(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
+    public Project(String name, String description, ProjectType projectType, Date start, Date end, int budget, Customer customer, Employee manager){
         this.name = name;
         this.description = description;
         this.customer = customer;
@@ -23,6 +24,7 @@ public class Project {
         this.tasksList = new ArrayList<Task>();
         this.developers = new ArrayList<Employee>();
         this.manager = manager;
+        this.projectType = projectType;
     }
     public void addTask(String name, String description, Date start, Date end, TaskType type){
         Task task = new Task(name, description, start, end, type);
@@ -95,5 +97,22 @@ public class Project {
 
     public void setDevelopers(ArrayList<Employee> developers) {
         this.developers = developers;
+    }
+
+    public ProjectType getProjectType() {
+        return projectType;
+    }
+
+    public void setProjectType(ProjectType projectType) {
+        this.projectType = projectType;
+    }
+
+    public void setContract(Contract contract) {
+        this.contract = contract;
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre de proyecto: "+name+"\nDescripcion de proyecto: "+description+"\nTipo de proyecto: "+projectType+"\nContrato:\n "+contract+"\nCliente:\n"+customer+"\nJefe:\n"+manager;
     }
 }
