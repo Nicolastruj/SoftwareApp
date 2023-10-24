@@ -35,4 +35,9 @@ public class Contract {
     public void setBudget(int budget) {
         this.budget = budget;
     }
+
+    @Override
+    public String toString() {
+        return "\tFecha de inicio: "+start+"\n\tFecha final: "+end+"\n\tPresupuesto: "+budget;
+    }
 }

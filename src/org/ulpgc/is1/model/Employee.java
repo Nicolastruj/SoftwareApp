@@ -69,10 +69,7 @@ public class Employee {
     }
     @Override
     public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return "\tNombre: "+name+"\n\tCorreo: "+email;
     }
 }
 

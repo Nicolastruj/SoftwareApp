@@ -11,11 +11,11 @@ public class Customer {
     public Customer(String name, String surname, Phone phone){
         this.name = name;
         this.surname = surname;
-        this.phone = phone;
+        this.setPhone(phone);
         this.projectsList = new ArrayList<Project>();
     }
-    public void addProject(String name, String description, Date start, Date end, int budget, Customer customer, Employee manager){
-        Project project = new Project( name, description, start, end, budget, customer, manager);
+    public void addProject(String name, String description, ProjectType projectType, Date start, Date end, int budget, Customer customer, Employee manager){
+        Project project = new Project( name, description, projectType ,start, end, budget, customer, manager);
         this.projectsList.add(project);
     }
     public String getName() {
@@ -39,7 +39,12 @@ public class Customer {
     }
 
     public void setPhone(Phone phone) {
-        this.phone = phone;
+        if (phone.isValid()){
+            this.phone = phone;
+        }
+        else {
+            this.phone.setNumber("XXXX");
+        }
     }
 
     public ArrayList<Project> getProjectsList() {
@@ -51,10 +56,6 @@ public class Customer {
     }
     @Override
     public String toString() {
-        return "Customer{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", phone=" + phone +
-                '}';
+        return "\tNombre: "+name+ "\n\tApellidos: "+surname+"\n\tTelefono: "+phone.toString();
     }
 }
