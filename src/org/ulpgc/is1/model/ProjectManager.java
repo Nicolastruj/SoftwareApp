@@ -14,10 +14,9 @@ public class ProjectManager {
         this.employeeList = new ArrayList<Employee>();
         this.customerList = new ArrayList<Customer>();
     }
-    public Project project(String name, String description, ProjectType projectType, Date start, Date end, int budget, Customer customer, Employee manager){
+    public void project(String name, String description, ProjectType projectType, Date start, Date end, int budget, Customer customer, Employee manager){
         this.project = new Project(name, description, projectType, start, end, budget, customer, manager);
-        return new Project(name, description, projectType, start, end, budget, customer, manager);
-    }
+        }
 
     public ArrayList<Employee> getEmployeeList() {
         return this.employeeList;

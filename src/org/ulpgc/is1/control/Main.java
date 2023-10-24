@@ -18,7 +18,7 @@ public class Main {
         projectManager.addEmployee("Adolfo", "adolfo@gmail.com");
 
         //Tercer paso
-        projectManager.project("Proyecto1", "Proyecto de prueba", ProjectType.Mobil_app_development ,new Date(2023, Calendar.JANUARY, 1), new Date(123, Calendar.DECEMBER, 31), 1000, projectManager.getCustomerList().get(0), projectManager.getEmployeeList().get(1));
+        projectManager.project("Proyecto1", "Proyecto de prueba", ProjectType.Mobil_app_development ,new Date(123, Calendar.JANUARY, 1), new Date(123, Calendar.DECEMBER, 31), 1000, projectManager.getCustomerList().get(0), projectManager.getEmployeeList().get(1));
         projectManager.getProject().addDevelopers(projectManager.getEmployeeList().get(0));
 
         //Cuarto paso
@@ -46,6 +46,7 @@ public class Main {
         System.out.println("\nDatos de las tareas del proyecto: ");
         for (Task task : projectManager.getProject().getTasksList()) {
             System.out.println(task.toString());
+            System.out.println("\n");
         }
 
         // Paso 9
