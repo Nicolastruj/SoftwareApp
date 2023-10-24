@@ -43,7 +43,7 @@ public class Customer {
             this.phone = phone;
         }
         else {
-            this.phone.setNumber("XXXX");
+            this.phone = new Phone("XXXX");
         }
     }
 

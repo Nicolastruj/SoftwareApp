@@ -6,15 +6,15 @@ public class Employee {
     private String name;
     private String email;
     private ArrayList<Task> tasksList;
-    private ArrayList<Project> projectListDeveloper;
-    private ArrayList<Project> projectListManager;
+    private ArrayList<Project> projectListDeveloped;
+    private ArrayList<Project> projectListManaged;
 
     public Employee(String name, String email) {
         this.name = name;
         this.email = email;
         this.tasksList = new ArrayList<Task>();
-        this.projectListDeveloper = new ArrayList<Project>();
-        this.projectListManager = new ArrayList<Project>();
+        this.projectListDeveloped = new ArrayList<Project>();
+        this.projectListManaged = new ArrayList<Project>();
     }
     public String getName() {
         return name;
@@ -36,36 +36,41 @@ public class Employee {
         this.tasksList = tasksList;
     }
 
-    public ArrayList<Project> getProjectListDeveloper() {
-        return projectListDeveloper;
+    public ArrayList<Project> getProjectListDeveloped() {
+        return projectListDeveloped;
     }
 
-    public void setProjectListDeveloper(ArrayList<Project> projectListDeveloper) {
-        this.projectListDeveloper = projectListDeveloper;
+    public void setProjectListDeveloped(ArrayList<Project> projectListDeveloped) {
+        this.projectListDeveloped = projectListDeveloped;
     }
 
-    public ArrayList<Project> getProjectListManager() {
-        return projectListManager;
+    public ArrayList<Project> getProjectListManaged() {
+        return projectListManaged;
     }
 
-    public void setProjectListManager(ArrayList<Project> projectListManager) {
-        this.projectListManager = projectListManager;
+    public void setProjectListManaged(ArrayList<Project> projectListManaged) {
+        this.projectListManaged = projectListManaged;
     }
 
     public void addTask(Task task){
         this.tasksList.add(task);
     }
-    public void addProjectdeveloper(Project project){
-        this.projectListDeveloper.add(project);
+    public void removeTask(int index){
+        this.tasksList.remove(index);
     }
-    public void removeProjectDeveloper(int index){
-        this.getProjectListDeveloper().remove(index);
+    public void addProjectDeveloped(Project project){
+        if (projectListDeveloped.contains(project) == false) {//Esto es una restriccion
+            this.projectListDeveloped.add(project);
+        }
     }
-    public void addProjectmanager(Project project){
-        this.projectListManager.add(project);
+    public void removeProjectDeveloped(int index){
+        this.getProjectListDeveloped().remove(index);
     }
-    public void removeProjectManager(int index){
-        this.getProjectListManager().remove(index);
+    public void addProjectmanaged(Project project){
+        this.projectListManaged.add(project);
+    }
+    public void removeProjectManaged(int index){
+        this.getProjectListManaged().remove(index);
     }
     @Override
     public String toString() {

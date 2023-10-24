@@ -20,7 +20,6 @@ public class Main {
         //Tercer paso
         projectManager.project("Proyecto1", "Proyecto de prueba", ProjectType.Mobil_app_development ,new Date(2023, Calendar.JANUARY, 1), new Date(123, Calendar.DECEMBER, 31), 1000, projectManager.getCustomerList().get(0), projectManager.getEmployeeList().get(1));
         projectManager.getProject().addDevelopers(projectManager.getEmployeeList().get(0));
-        projectManager.getEmployeeList();
 
         //Cuarto paso
         projectManager.getProject().addTask("Primera tarea","Primera tarea de prueba", new Date(123, Calendar.JANUARY, 1), new Date(123, Calendar.OCTOBER, 1), TaskType.Design);

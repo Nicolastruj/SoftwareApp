@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58b9fce8-cef5-4ea7-8d30-2c58288b9c83" name="Changes" comment="10th commit, added Main">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2023_16_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2023_16_02__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2023_16_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2023_16_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2023_16_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2023_16_14__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2023_16_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2023_16_16__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Contract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/ProjectManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,14 +47,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature1",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.ulpgc.is1.model" />

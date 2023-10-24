@@ -34,7 +34,9 @@ public class Project {
         this.getTasksList().remove(index);
     }
     public void addDevelopers(Employee developer){
-        this.developers.add(developer);
+        if (this.developers.contains(developer) == false){//Esto es una restriccion
+            this.developers.add(developer);
+        }
     }
     public void removeDeveloper(int index){
         this.getDevelopers().remove(index);
